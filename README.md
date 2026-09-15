@@ -1,3 +1,5 @@
+![itgam's banner](/resources!/banneritgam.jpg)
+
 # oyodd_2026
 
 Repositorio de la materia "Estructura y Organización de Datos", semestre 2026B.
