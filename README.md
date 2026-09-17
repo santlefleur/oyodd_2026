@@ -25,3 +25,5 @@ Repositorio para el curso de Estructura y Organización de Datos. Contiene apunt
 ---
 
 Última actualización: 2026-09-15 (cambios desde el Codespace)
+
+hola hola
