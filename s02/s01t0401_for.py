@@ -25,7 +25,7 @@ for number in range(1,n+1):
     # sum = 3 
     # 3: sum <- 3 +3 
     # ...
-    # 100: SUM : <- sum_(-1) + 100
+    # sum: <- sum_(-1) + 100
 
 print(f"la suma de 1 hasta {n} es: {sum}")
 
