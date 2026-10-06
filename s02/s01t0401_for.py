@@ -9,7 +9,7 @@ calculara la suma de 1 al 100
 
 import time
 
-# Funcion que suma los
+# funcion que suma los
 # primeros "n" numreso naturles
 def sum_of_n(n):
     total_sum = 0
@@ -29,7 +29,7 @@ for repetition in range(1,11):
     timestamp_01 = time.time()
 
     # Sumo los "n" números
-    n = repetition*100
+    n = repetition*500
     # Guardo el resultado en result
     result = sum_of_n(n)
 

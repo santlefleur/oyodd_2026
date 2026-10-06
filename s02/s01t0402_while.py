@@ -9,40 +9,38 @@ calculara la suma de 1 al 100
 # importar la biblioteca de tiempo
 import time
 
-# Variable para guardar El data set
+# variable para guardar El data set
 dataset = []
 
-# Bucle externo para hacer las 10 mediciones
+# 10 mediciones
 for repetition in range(1, 11):
     
-    # Crear las variables para el problema 
-    # Multiplicamos por 500 para obtener: 500, 1000, 1500 ... 5000
+    # variables para el problema 
+    # se multiplica por 500 para obtener: 500, 1000, 1500 ... 5000
     n_original = repetition * 500
-    n = n_original # Copiamos el valor porque tu while modificará 'n'
+    n = n_original # se copia el valor porque while modificará 'n'
     
-    # Como ya existe sum, se cambiara el name
+    # como ya existe sum en py, se cambiara el name
     the_sum = 0
 
-    # Tomando el tiempo 1
+    # tiempo 1
     timestamp_01 = time.time()
 
-    # --- INICIO DE TU WHILE INTACTO ---
-    # Iniciando la suma
+    # iniciando la suma
     while(n > 0):
         the_sum = the_sum + n
-        # Se busca que n + (n-1) + (n-2) ... + 1
+        # se busca que n + (n-1) + (n-2) ... + 1
         n = n - 1
-    # --- FIN DE TU WHILE INTACTO ---
 
-    # Se toma el tiempo 2
+    # tiempo 2
     timestamp_02 = time.time()
 
-    # Calculando el tiempo
+    # se calcula el tiempo
     elapsed_time = round((timestamp_02-timestamp_01) * 1e6, 2)
     
-    # Agregar la tripleta de los datos al dataset
+    # agregar la tripleta de los datos al dataset
     dataset.append( (n_original, elapsed_time, the_sum) )
 
-# Imprimir el dataset
+# dataset
 for tup in dataset:
     print(tup)
