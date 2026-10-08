@@ -1,0 +1,7 @@
+from array import array as arr
+
+array_01 = arr('i', [3, 8, 5, 1, 6]) #O(1)
+
+for data in array_01: #O(n)
+    print(data) #O(1) para cada impresión
+    print()
