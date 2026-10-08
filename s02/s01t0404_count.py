@@ -1,5 +1,6 @@
 # Se crea una lista de estudiantes
-students_list_01 = ['Juan', 'Pedro', 'Maria', 'Jose']  # O(1)
+ # O(1)
+students_list_01 = ['Juan', 'Pedro', 'Maria', 'Jose'] 
 
 def random_function(students):
     first = students[0]  # O(1)
@@ -14,3 +15,5 @@ def random_function(students):
     return total  # O(1)
 
 print(random_function(students_list_01))  
+
+# Calcular O(2n)+O(5) = O(2n+5) = O(n)
