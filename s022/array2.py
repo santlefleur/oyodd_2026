@@ -40,4 +40,7 @@ try:
 except:
     print("Numero no encontrado")
 
-# Busqueda por indices
+try:
+    my_array[100] = 3
+except: 
+    print("Indice NO existe")
