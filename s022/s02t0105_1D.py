@@ -1,0 +1,25 @@
+
+from array import array as arr
+
+# Impresion de de una tabla de 
+def print_table(input_table):
+    for row in input_table:
+        for column in row:
+            print(column, end=",")
+        print("\b ")
+
+table = [
+    arr('i', [1, 2, 3]),
+    arr('i', [4, 5, 6]),
+    arr('i', [7, 8, 9]),
+]
+
+print_table(table)
+
+# insercion
+row = 1
+column = 2
+value = 99
+
+# insertar en la fila 1, columna 2 el valor 99
+table[row].insert(column, value)

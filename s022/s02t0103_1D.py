@@ -19,5 +19,5 @@ my_array.append(100)
 print_array(my_array)
 
 print("---SIMULAR UN APPEND CON INSERT---")
-my_array.insert(len(my_array), 90000)
+my_array.insert(len(my_array),  90000)
 print_array(my_array)
