@@ -36,3 +36,10 @@ table.insert(position, new_row)
 #Imprimiendo mensaje
 print("---DESPUÉS DE INSERTAR UNA FILA COMPLETA---")
 print_table(table)  #DRY
+
+# Eliminación de elementos
+del table[2]
+
+#Imprimiendo mensaje
+print("---DESPUÉS DE ELIMINAR---")
+print_table(table)  #DRY
