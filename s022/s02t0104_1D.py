@@ -12,11 +12,10 @@ print_array(my_array)
 
 # Eliminación
 try:
-    my_array.remove(100)
+    my_array.remove(10)
 except:
-    
     print(f"El elemento no se encuentra en el arreglo")
-my_array.remove(100)
+
 print("---DESPUÉS DE LA ELIMINACION---")
 print_array(my_array)
 
