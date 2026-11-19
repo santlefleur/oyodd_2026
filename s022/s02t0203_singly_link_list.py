@@ -26,21 +26,45 @@ class SinglyLinkedList:
         # Se incrementa size en 1
         self.size += 1
         
-        # Si la lista esta vacia, el nuevo nodo se convierte en la cabeza
-        if not self.head:
-            self.head = new_node
-            return
-
-        # Si la lista no esta vacia, se recorre hasta el final y se agrega el nuevo nodo
-        current_node = self.head
-        while current_node.next:
-            current_node = current_node.next
-        current_node.next = new_node
-
     # Insertando en posicion intermedia
+    # [A -> B -> C] -1 3
+    # [o 1 2]
+    # size = 3
     def append_at_location(self, data, index):
-        if index < 0
+        if index < 1 or index > self.size + 1:
+            raise IndexError(f"Indice {index} fuera de rango")
 
+        # Crear un nuevo nodo
+        new_node = Node(data)
+
+        # Insertar al inicio de la lista
+        if index == 1:
+            new_node.next = self.head
+            self.head = new_node
+            if self.tail == None:
+                self.tail = new_node
+            # Incremento en 1 el tamaño
+            self.size += 1
+            # Creando variables de control para las inseciones intermedias
+            current = self.head
+            preview = None
+            position = 1
+
+            # Traversal (Recorrido)
+            while current is not None and position < index:
+                preview = current
+                current = current.next
+                position += 1
+
+            #Llegando a la posicion
+            if current is None:
+                preview.next = new_node
+                self.tail = new_node
+                self.size += 1
+                return
+
+            # Si se llega a una posicion intermedia
+            #TOOO
 # Se crea la funcion principal
 def main():
     # Creando una instancia de una lista enlazada
